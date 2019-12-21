@@ -1,13 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2019-12-11, 20:13:21
-    Author     : Miriloo.com
-*/
-
 body {
   font-family: Arial, Helvetica, sans-serif;
  /* background-color: #f9f9f9;*/
@@ -76,7 +66,6 @@ body {
 }
 
 .dropdown-content a:hover {
-  /* background-color: #ddd;*/
     background-color: #4CAF50;
     color: white;
 }
@@ -143,10 +132,6 @@ h3
 
  }
 
- /*.column1 h2
- {
-     padding-left: 10px;
- }*/
  .aboutme
  {
    border-left: solid;
@@ -155,7 +140,6 @@ h3
    line-height: 120%;
       box-shadow: 20px;
 
-    /*border-image: linear-gradient(steelblue, steelblue);  */
  }
 
 .newsletter_icon
@@ -240,7 +224,6 @@ input[type=submit]:hover {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
   .maintext .whoami {
     width: 100%;
@@ -254,7 +237,6 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
   .maintext .whoami {
     width: 100%;
@@ -270,7 +252,6 @@ input[type=submit]:hover {
     width: 100%;
     text-align: right;
     font-size: 12px;
-    /*color: black;*/
     background-color: lightgrey;
     font-family:Calibri, Helvetica, sans-serif ;
     color: #808080;
