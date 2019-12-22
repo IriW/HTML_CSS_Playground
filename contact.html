@@ -60,14 +60,14 @@
     <label for="fname">Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Write your name...">
 
-    <label for="lname">E-mail</label>
-    <input type="text" id="contactemail" name="contactemail" placeholder="Write your e-mail address...">
+    <label for="email">E-mail *</label>
+    <input type="email" id="contactemail" name="contactemail" placeholder="Write your e-mail address..." required>
 
-    <label for="fname">Subject</label>
+    <label for="subject">Subject</label>
     <input type="text" id="fname" name="subject" placeholder="What is your message about?...">
 
-    <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Text..." style="height:140px"></textarea>
+    <label for="message">Message *</label>
+    <textarea id="message" name="subject" placeholder="Text..." style="height:140px" required></textarea>
     
              <input type="file" name="File"/> 
             <input type="hidden" name="data" value="2019"/>         
@@ -86,7 +86,7 @@
                     <h3>Subscribe to my newsletter</h3>
                     <img class="newsletter_icon" src="img/newsletter.png">
                         <div class="newsletter_form"><form-action="#" method="post"></div>
-                    <p>E-mail: <input class="input_text" type="text" name="email"/>
+                    <p>E-mail: <input class="input_text" type="email" name="email"/>
                     <input class="submit_button" type="submit" value="Submit"/></p>
                     </div>
                 </div>
