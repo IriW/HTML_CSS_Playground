@@ -22,13 +22,15 @@ body {
   text-decoration: none;
 }
 
-.dropdown {
+.dropdown 
+{
   float: left;
   overflow: hidden;
   -ms-background-color: black;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn, .btt
+{
   font-size: 16px;  
   border: none;
   outline: none;
@@ -40,11 +42,19 @@ body {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn , .btt
+{
   background-color: #4CAF50;
   -ms-background-color: #4CAF50;
 }
 
+.btt
+{
+    float: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 3px;
+}
 .dropdown-content {
   display: none;
   position: fixed;
@@ -182,7 +192,7 @@ h3
     
 }
 
-.submit_button:hover 
+.submit_button:hover
 {   background-color: #4CAF50;
     color: white;
 } 
