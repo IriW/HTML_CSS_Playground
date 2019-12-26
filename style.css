@@ -154,10 +154,14 @@ h3
     line-break: auto;
     line-height: 120%;
 }
+.newslettercontent input[type=email]
+{
+    margin-bottom: 0px;
+}
 
-.input_text
+.input_text 
 {   border: 1px solid #4CAF50;
-    background: transparent; 
+    background: transparent;
 }
 
 .contact_text
@@ -167,7 +171,7 @@ h3
 
 .submit_button
 {
-    margin-top: 4px;
+    margin-top: 7px;
     border: 1px solid #4CAF50;
     border-radius: 6px; 
     background: transparent; 
