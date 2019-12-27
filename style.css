@@ -97,9 +97,8 @@ body {
 
 .banner
 {
-   width: 95%;
-   padding-left: 22px;
-   margin-bottom: 25px;
+   padding-left: 20px;
+   margin-bottom: 12px;
 }
 
 h1
@@ -121,13 +120,46 @@ h3
   color: #4CAF50;   
   
 }
+.row
+{
+    margin-top: -30px;
+}
 /* Create 2 columns that floats next to each other */
 .maintext {
   float: left;
   width: 72%;
   padding-left: 2%;
   text-align: justify;
-  line-height: 120%;
+  line-height: 115%;
+}
+.capitalize 
+{
+    text-transform: capitalize;
+}
+
+.uppercase
+{
+   text-transform: uppercase; 
+}
+
+.lowercase
+{
+  text-transform: lowercase;  
+}
+
+.coursebox
+{
+  width: 300px;
+  border: 15px solid #3b3a30;
+  padding: 60px;
+  margin: 20px;
+  margin-left: 0px;
+  text-align: center;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  box-shadow: 10px 10px 27px 0px rgba(76,175,80,1);
+
 }
 
 .column1
@@ -159,7 +191,7 @@ h3
 {
     font-family:Lato, Helvetica, sans-serif;
     color: #3b3a30;
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
     line-break: auto;
     line-height: 120%;
@@ -268,4 +300,9 @@ input[type=submit]:hover {
 }
 ul {
     list-style-type: none;
+}
+.course1miracle{
+    background-image: url('img/bird.jpg');
+    background-size: cover;
+    background-color: rgba(204,204,204, 0,3)
 }
