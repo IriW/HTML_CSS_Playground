@@ -61,7 +61,7 @@ body {
 .btt
 {
     float: none;
-    text-decoration:none;
+    border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 3px;
 }
