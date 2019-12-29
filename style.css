@@ -101,21 +101,18 @@ body {
    margin-bottom: 12px;
 }
 
-h1
+h1, h2
 {
     top: 40px;
-    text-align: center;
     color: #4CAF50;
 }
 
-h2
+h1, h3
 {
-    top: 40px;
-    color: #4CAF50; 
+    text-align: center; 
 }
 h3
 {
-  text-align: center;
   font-size: 17px;
   color: #4CAF50;   
   
@@ -130,7 +127,11 @@ h3
   width: 72%;
   padding-left: 2%;
   text-align: justify;
-  line-height: 115%;
+  line-height: 120%;
+}
+.maintext p
+{
+    font-size: 14px;
 }
 .capitalize 
 {
@@ -147,31 +148,53 @@ h3
   text-transform: lowercase;  
 }
 
-.coursebox
-{
+.coursebox {
+  color:white;
+  font-size: 19px;
   width: 300px;
   border: 15px solid #3b3a30;
   padding: 60px;
   margin: 20px;
   margin-left: 0px;
   text-align: center;
+  position:relative;
   background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   box-shadow: 10px 10px 27px 0px rgba(76,175,80,1);
   -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-  transition: width 2s, height 2s, transform 2s;
-}
+  
+  animation: myfirst 5s linear 2s infinite alternate;
+  transition: width 2s, height 2s, transform 2s;}
 
-
-.coursebox:hover {
-  width: 300px;
+  .coursebox:hover
+{ width: 300px;
   background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   -webkit-transform: rotate(360deg); /* Safari */
   transform: rotate(360deg);
   transition: ease-out 1s;
+    
+  -webkit-animation: myfirst 1s linear 2s infinite alternate; /* Safari 4.0 - 8.0 */
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+  0%   {background-color:#ff1463; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:#ff1463; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  0%   {background-color:#ff1463; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:#ff1463; left:0px; top:0px;}
 }
 
 .column1
@@ -330,3 +353,75 @@ ul {
     {
     text-decoration: none;
 }
+/* CUBE ROTATE START */ 
+       #scene
+        {
+            float: right;
+            width: 200px;
+            height: 200px;
+            margin: 0px 50px 20px 80px ;
+            position:  relative;
+            perspective: 1000px;
+        }
+        
+        #cube
+        {position: absolute;
+        transform-style: preserve-3d;
+        width: 100%;
+        height: 100%;
+        animation: cuberotate 7s infinite alternate;
+        }
+        .side
+        {
+            opacity: 0.9;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            line-height: 200px;
+            text-align: center;
+        }
+        div.front
+        {
+            background-color: #39CCCC;
+            transform: translateZ(100px);
+        }
+        div.back
+        {
+            background-color: #001f3f;
+            transform: rotateX(180deg) translateZ(100px);
+        }
+        div.left
+        {
+            background-color: #01FF70;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        div.right
+        {
+            background-color: #3D9970;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        div.top
+        {
+            background-color: #7FDBFF;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        div.bottom
+        {
+            background-color: #85144b;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        @keyframes cuberotate
+        {
+            from
+            {
+                
+            }
+            to
+            {
+                transform: rotateY(360deg) rotateX(360deg);
+            }
+        }
+        /* CUBE ROTATE END */ 
